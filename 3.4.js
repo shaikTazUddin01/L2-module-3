@@ -18,7 +18,16 @@
             console.log('the bog is ghawing');
         }
     }
+    const isDOg = (animal) => {
+        return animal instanceof Dog;
+    };
+    const getanimal = (animal) => {
+        if (isDOg(animal)) {
+            animal.makeGhaw();
+        }
+    };
     const dog = new Dog('dog vai', "dog");
     dog.makeGhaw();
     dog.makeSOund();
+    // console.log(getanimal());
 }
