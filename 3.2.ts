@@ -3,18 +3,18 @@
 
     //parent
     class Parent {
-        name: string;
+        namepro: string;
         age: number;
         address: string;
 
         constructor(name: string, age: number, address: string) {
-            this.name = name;
+            this.namepro = name;
             this.age = age;
             this.address = address;
 
         }
         getSleep(numOfHours: number) {
-            console.log(`${this.name} will sleep for ${numOfHours}`)
+            console.log(`${this.namepro} will sleep for ${numOfHours}`)
         }
     }
 
@@ -41,7 +41,7 @@
         }
        
         takeClass(numOfClass: number) {
-            console.log(`${this.name} will sleep for ${numOfClass}`)
+            console.log(`${this.namepro} will sleep for ${numOfClass}`)
 
         }
     }
