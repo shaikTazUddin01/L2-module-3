@@ -1,5 +1,6 @@
+"use strict";
 {
-    var add = function (param1, param2) {
+    const add = (param1, param2) => {
         if (typeof (param1) === 'number' && typeof (param2) === 'number') {
             return param1 + param2;
         }
@@ -7,19 +8,19 @@
             return param1.toString() + param2.toString();
         }
     };
-    var result = add(2, 3);
-    var getUser = function (user) {
+    const result = add(2, 3);
+    const getUser = (user) => {
         if ('role' in user) {
-            console.log("my name is ".concat(user.name, " and my role is ").concat(user.role));
+            console.log(`my name is ${user.name} and my role is ${user.role}`);
         }
         else {
-            console.log("my name is ".concat(user.name, " ."));
+            console.log(`my name is ${user.name} .`);
         }
     };
-    var normalUser = {
+    const normalUser = {
         name: "mr normal vai"
     };
-    var adminUser = {
+    const adminUser = {
         name: "mr normal vai",
         role: 'admin'
     };
